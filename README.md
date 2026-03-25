@@ -97,31 +97,42 @@ This transparency allows users to verify answer sources.
 
 ## How to Run Locally
 
-1. Clone repository:
-2.git clone <repo_link>
-3.cd project
+1. Clone the repository:
 
-### 2. Install dependencies
+```bash
+git clone <repo_link>
+cd project
+```
+
+2. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
-### 3. Set your API key
+
+3. Set your OpenRouter API key.
+
 Windows:
+
 ```bash
-set OPENROUTER_API_KEY=your_api_key
+setx OPENROUTER_API_KEY "your_api_key"
 ```
-Mac/Linux:
+
+Mac / Linux:
+
 ```bash
-export OPENROUTER_API_KEY=your_api_key
+export OPENROUTER_API_KEY="your_api_key"
 ```
-### 4. Run the app
+
+4. Run the application:
+
 ```bash
 streamlit run app.py
- ```
-5. Open in Browser
+```
 
-After running the command, the app will open automatically.
-If not, open this in your browser:
+5. Open the application in your browser:
+
+If the app does not open automatically, visit:
 
 http://localhost:8501
 ## Example Queries
